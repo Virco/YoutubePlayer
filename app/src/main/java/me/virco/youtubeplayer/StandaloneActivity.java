@@ -36,11 +36,11 @@ public class StandaloneActivity extends AppCompatActivity implements View.OnClic
         switch (v.getId()) {
             case R.id.btnPlayVideo:
                 intent = YouTubeStandalonePlayer.createVideoIntent(this, YoutubeActivity.GOOGLE_API_KEY,
-                        YoutubeActivity.YOUTUBE_VIDEO_ID);
+                        YoutubeActivity.YOUTUBE_VIDEO_ID, 0, true, false);
                 break;
             case R.id.btnPlaylist:
                 intent = YouTubeStandalonePlayer.createPlaylistIntent(this, YoutubeActivity.GOOGLE_API_KEY,
-                        YoutubeActivity.YOUTUBE_PLAYLIST);
+                        YoutubeActivity.YOUTUBE_PLAYLIST, 0, 0, true, true);
                 break;
             default:
         }
